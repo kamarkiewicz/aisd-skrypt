@@ -1,0 +1,24 @@
+language: generic
+sudo: false
+
+cache:
+  apt: true
+  timeout: 10000
+  directories: build
+
+script:
+- mkdir -p build
+- pdflatex -interaction=nonstopmode -output-directory build skrypt.tex
+
+addons:
+  apt:
+    packages:
+    - pgf
+    - texlive-fonts-extra
+    - texlive-fonts-recommended
+    - texlive-generic-recommended
+    - texlive-lang-polish
+    - texlive-latex-extra
+    - texlive-latex-recommended
+    - texlive-pictures
+    - texlive-science

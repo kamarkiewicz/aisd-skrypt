@@ -1,4 +1,7 @@
 # aisd-skrypt
+
+[![Build Status](https://travis-ci.org/kamarkiewicz/aisd-skrypt.svg?branch=master)](https://travis-ci.org/kamarkiewicz/aisd-skrypt)
+
 Skrypt do przedmiotu "Algorytmy i Struktury Danych"
 
 Konwencja:
