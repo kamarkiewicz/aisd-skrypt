@@ -8,7 +8,14 @@ cache:
 
 script:
 - mkdir -p build
-- pdflatex -interaction=nonstopmode -output-directory build skrypt.tex
+- pdflatex -interaction=nonstopmode -output-directory build skrypt.tex || exit 0
+
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN # Set in travis-ci.org dashboard
+  on:
+    branch: master
 
 addons:
   apt:
